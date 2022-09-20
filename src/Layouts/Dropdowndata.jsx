@@ -18,7 +18,7 @@ export const ServiceDropdown = [
         img2: '/assets/images/icons/promo/Custom-Website-Design-2.png',
         heading: "Custom Website Design",
         description: "We are Digital Business Agency Our lofty offers confirm your long-lasting triumph. Get customized website designs formulated by our expert.",
-        serlink: "/servicedetail/1"
+        serlink: "/servicedetail/custom-website-design"
     },
     {
         id: "2",
@@ -38,7 +38,7 @@ export const ServiceDropdown = [
         img2: '/assets/images/icons/promo/Content-Marketing-2.png',
         heading: "Content Marketing",
         description: "We are Digital Business Agency Our spectacular amenities ensure the success of your business. Use our classy content marketing services as",
-        serlink: "/servicedetail/2"
+        serlink: "/servicedetail/content-marketing"
     },
     {
         id: "3",
@@ -58,7 +58,7 @@ export const ServiceDropdown = [
         img2: '/assets/images/icons/promo/Pay-Per-Click.png',
         heading: "Pay Per Click",
         description: "We are Digital Business Agency Our effective cooperation won’t let your business down. Reach out to your targeted audience more precisely.",
-        serlink: "/servicedetail/3"
+        serlink: "/servicedetail/pay-per-click"
     },
     {
         id: "4",
@@ -78,7 +78,7 @@ export const ServiceDropdown = [
         img2: '/assets/images/icons/promo/Social-Media-Marketing.png',
         heading: "Social Media Marketing",
         description: "We are Digital Business Agency Our supreme services confirm stabilized victory of your business. Get foolproof social media marketing services with",
-        serlink: "/servicedetail/4"
+        serlink: "/servicedetail/social-media-marketing"
     },
     {
         id: "5",
@@ -98,7 +98,7 @@ export const ServiceDropdown = [
         img2: '/assets/images/icons/promo/Search-Engine-Marketing-2.png',
         heading: "Search Engine Marketing",
         description: "We are Digital Business Agency Our unusual features promise the prosperity of your business. Attain flawless relevant marketing services from",
-        serlink: "/servicedetail/5"
+        serlink: "/servicedetail/search-engine-marketing"
     },
     {
         id: "6",
@@ -119,7 +119,7 @@ export const ServiceDropdown = [
         img2: '/assets/images/icons/promo/Search-Engine-Optimization-2.png',
         heading: "Search Engine Optimization",
         description: "We are Digital Business Agency Our exceptional team services enable your business to positively fly higher in skies. Acquire our Search",
-        serlink: "/servicedetail/6"
+        serlink: "/servicedetail/search-engine-optimization"
     },
 
 

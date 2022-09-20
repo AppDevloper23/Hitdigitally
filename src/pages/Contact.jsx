@@ -1,27 +1,10 @@
 import React from 'react';
 import Banner from './Components/Banner';
+import Form from './Components/Form';
+
 
 function Contact() {
-
-    const [formData, updateFormData] = React.useState();
-
-    const handleChange = (e) => {
-        updateFormData({
-            ...formData,
-
-            // Trimming any whitespace
-            [e.target.name]: e.target.value.trim()
-        });
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        console.log(formData);
-        // ... submit to API or something
-    };
-
-    // return null
-
+    
     return (
         <>
 
@@ -46,39 +29,7 @@ function Contact() {
                         <div className="container">
                             <div className="row">
                                 <div className="col-xl-10 offset-xl-1 col-12">
-                                    <form id="contact-form" className="default-form" action="https://whizthemes.com/mail-php/jaber/contact.php" method="post">
-                                        <div className="row">
-                                            <div className="col-lg-6 mb-20">
-                                                <div className="default-form-single-item">
-                                                    <input name="name" type="text" placeholder="Name" onChange={handleChange} required />
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-6 mb-20">
-                                                <div className="default-form-single-item">
-                                                    <input name="email" type="email" placeholder="Email" onChange={handleChange} required />
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-6 mb-20">
-                                                <div className="default-form-single-item">
-                                                    <input name="tel" type="tel" placeholder="Phone No." onChange={handleChange} required />
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-6 mb-20">
-                                                <div className="default-form-single-item">
-                                                    <input name="subject" type="text" placeholder="Subject" onChange={handleChange} required />
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-12">
-                                                <div className="default-form-single-item">
-                                                    <textarea name="message" placeholder="Write a message..." onChange={handleChange} rows="10"></textarea>
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-12 text-center">
-                                                <button type="submit" onClick={handleSubmit} className="btn btn-lg btn-default icon-right submit-btn">Submit Now <i className="icofont-double-right"></i></button>
-                                            </div>
-                                            <p className="form-messege"></p>
-                                        </div>
-                                    </form>
+                                    <Form />
                                 </div>
                             </div>
                         </div>

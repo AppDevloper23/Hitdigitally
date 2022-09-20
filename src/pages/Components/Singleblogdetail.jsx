@@ -1,5 +1,6 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
+import Blogbox from './Blogbox';
 
 
 const Singleblogdetail = () => {
@@ -62,10 +63,10 @@ const Singleblogdetail = () => {
                                                                     <div className="blog-share ">
                                                                         <div className="text">Share this article:</div>
                                                                         <ul className="social-link">
-                                                                            <li><a href="#" target="_blank" rel="noopener noreferrer"><i className="icofont-facebook"></i></a></li>
-                                                                            <li><a href="#" target="_blank" rel="noopener noreferrer"><i className="icofont-skype"></i></a></li>
-                                                                            <li><a href="#" target="_blank" rel="noopener noreferrer"><i className="icofont-twitter"></i></a></li>
-                                                                            <li><a href="#" target="_blank" rel="noopener noreferrer"><i className="icofont-linkedin"></i></a></li>
+                                                                            <li><a href="https://www.facebook.com/people/Hit-Digitally/100034443744675/" target="_blank" rel="noopener noreferrer"><i className="icofont-facebook"></i></a></li>
+                                                                            <li><a href="https://www.youtube.com/channel/UC0PCwE6SK9SHqZKQ4bE_EHQ" target="_blank" rel="noopener noreferrer"><i className="icofont-youtube"></i></a></li>
+                                                                            <li><a href="https://twitter.com/HDigitally?lang=en" target="_blank" rel="noopener noreferrer"><i className="icofont-twitter"></i></a></li>
+                                                                            <li><a href="https://www.instagram.com/hitdigitally/" target="_blank" rel="noopener noreferrer"><i className="icofont-instagram"></i></a></li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -82,6 +83,36 @@ const Singleblogdetail = () => {
                     </div>
                 </div>
             </div>
+            <div className="blog-list-section section-top-gap-150">
+            <div className="box-wrapper">
+            <div className="section-wrapper">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-xl-7">
+                                <div className="section-content section-content-gap-80">
+                                    <h6 className="section-tag tag-blue">Latest News</h6>
+                                    <h3 className="section-title">Related Blogs</h3>
+                                    <span className="icon-seperator"><img
+											src="/assets/images/icons/section-seperator-shape.png" alt="" /></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="blog-list-wrapper" >
+                    <div className="container">
+                        <div className="row justify-content-center">
+                            <div className="col-12">
+                                <div className="blog-list-items-full-width">
+                                    <Blogbox />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </>
     )
 }

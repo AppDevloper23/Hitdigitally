@@ -4,10 +4,9 @@ import Banner from './Components/Banner';
 
 function About() {
 
-  return null
   return (
     <>
-    <Banner home={"Home"} title={"About"} liItem={"About"}/>
+    <Banner home={"Home"} title={"About Us"} liItem={"About Us"}/>
       <div className="content-display-section section-top-gap-150">
         <div className="box-wrapper custom-box-wrapper about-box-wrapper pos-relative">
           <div className="content-inner-img content-inner-img-left">

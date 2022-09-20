@@ -3,8 +3,16 @@ import { Outlet, Link } from "react-router-dom";
 import Dropdown from './Dropdown';
 import Mobile from './Mobile';
 
-function Header() {
 
+function Header() {
+    const [navbarOpen, setNavbarOpen] = useState(false)
+
+    const handleToggle = () => {
+        setNavbarOpen(!navbarOpen)
+    }
+    const closeMenu = () => {
+        setNavbarOpen(false)
+    }
     return (
         <>
             <main className="main-wrapper">
@@ -15,7 +23,7 @@ function Header() {
                                 <div className="col-auto">
 
                                     <Link to="/" className="header-logo">
-                                        <img src="assets/images/logo/logo.png" alt="" />
+                                        <img src="/assets/images/logo/logo.png" alt="" />
                                     </Link>
 
                                 </div>
@@ -56,7 +64,7 @@ function Header() {
                         <div className="row align-items-center justify-content-between">
                             <div className="col-auto">
                                 <div className="mobile-logo">
-                                    <Link to="in/"><img src="assets/images/logo/logo.png" alt="" /></Link>
+                                    <Link to="/"><img src="/assets/images/logo/logo.png" alt="" /></Link>
                                 </div>
                             </div>
                             <div className="col-auto">
@@ -70,9 +78,11 @@ function Header() {
                 <div className="offcanvas offcanvas-start" tabIndex="-1" id="toggleMenu">
                     <div className="offcanvas-header">
 
-                        <Link to="/" className="header-logo"><img src="assets/images/logo/logo.png" alt="" /></Link>
+                        <Link to="/" className="header-logo"><img src="/assets/images/logo/logo.png" alt="" /></Link>
 
-                        <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" onClick={handleToggle}>
+                           
+                        </button>
                     </div>
                     <div className="offcanvas-body">
 
@@ -81,23 +91,23 @@ function Header() {
                             <div className="mobile-menu-bottom">
 
                                 <div className="offcanvas-menu">
-                                    <ul>
-                                        <li><Link to="/">Home</Link></li>
+                                    <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
+                                        <li><Link to="/" onClick={() => closeMenu()}>Home</Link></li>
                                         <li>
-                                            <Link to="/service">Service</Link>
+                                            <Link to="/service" onClick={() => closeMenu()}>Service</Link>
                                             <Mobile />
                                         </li>
                                         <li>
-                                            <Link to="/portfolio">Portfolio</Link>
+                                            <Link to="/portfolio" onClick={() => closeMenu()}>Portfolio</Link>
                                         </li>
                                         <li>
-                                            <Link to="/about">About</Link>
+                                            <Link to="/about" onClick={() => closeMenu()}>About</Link>
                                         </li>
                                         <li>
-                                            <Link to="/blog">Blogs</Link>
+                                            <Link to="/blog" onClick={() => closeMenu()}>Blogs</Link>
                                         </li>
                                         <li>
-                                            <Link to="contact">Contact</Link>
+                                            <Link to="contact" onClick={() => closeMenu()}>Contact</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -106,11 +116,12 @@ function Header() {
 
                             <div className="mobile-contact-info text-center">
                                 <ul className="social-link">
-                                    <li><Link to="https://example.com/"><i className="icofont-facebook"></i></Link>
+                                    <li><Link to="https://www.facebook.com/people/Hit-Digitally/100034443744675/"><i className="icofont-facebook"></i></Link>
                                     </li>
-                                    <li><Link to="https://example.com/"><i className="icofont-twitter"></i></Link>
+                                    <li><Link to="https://twitter.com/HDigitally?lang=en"><i className="icofont-twitter"></i></Link>
                                     </li>
-                                    <li><Link to="https://example.com/"><i className="icofont-skype"></i></Link></li>
+                                    <li><Link to="https://www.youtube.com/channel/UC0PCwE6SK9SHqZKQ4bE_EHQ"><i className="icofont-youtube"></i></Link></li>
+                                    <li><Link to="https://www.instagram.com/hitdigitally/"><i className="icofont-instagram"></i></Link></li>
                                 </ul>
                             </div>
 

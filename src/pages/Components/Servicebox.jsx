@@ -13,8 +13,9 @@ export default function Servicebox() {
                   <div className="section-content section-content-gap-80 text-center">
                     <h6 className="section-tag tag-orange">Our Services</h6>
                     <h3 className="section-title">Provide awesome service for our customer</h3>
-                    <span className="icon-seperator"><img
-                      src="assets/images/icons/section-seperator-shape.png" alt="" /></span>
+                    <span className="icon-seperator">
+                      <img src="assets/images/icons/section-seperator-shape.png" alt="" />
+                    </span>
                   </div>
                 </div>
               </div>

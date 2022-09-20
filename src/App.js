@@ -11,18 +11,19 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import Servicedetail from "./pages/Servicedetail";
+import ScrollToTop from "./pages/Components/ScrollToTop";
 
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Header />}>
           <Route index element={<Home />} />
-          
           <Route path="Portfolio" element={<Portfolio />} />
           <Route path="Service" element={<Service />} />
-          <Route path="Servicedetail/:id"   element={<Servicedetail />} />
+          <Route path="Servicedetail/:id" element={<Servicedetail />} />
           <Route path="About" element={<About />} />
           <Route path="Blog" element={<Blog />} />
           <Route path="blogdetails/:id" element={<Blogdetail />} />
@@ -32,9 +33,8 @@ export default function App() {
       </Routes>
       <Footer />
     </BrowserRouter>
-
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);

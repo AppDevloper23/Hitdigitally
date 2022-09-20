@@ -3,8 +3,8 @@ import Process from './Ourprocess';
 import { useLocation } from 'react-router-dom'
 
 function Serdetails() {
-    const location = useLocation()
-    const props = location.state
+    const location = useLocation();
+    let props = (location.state);
     return (
         <>
             <div className="service-details-section section-top-gap-150">
@@ -15,7 +15,7 @@ function Serdetails() {
                                 <div className="col-12">
                                     <div className="custome-container-with-sidebar d-flex flex-column-reverse flex-lg-row">
                                         <div className="container-width-80">
-                                            <div className="default-text-content">
+                                            <div className="default-text-content" key={props.id}>
                                                 <div className="default-content-hero-image">
                                                     <img className="img-fluid" src={props.Serviceimg} alt="" />
                                                 </div>
@@ -26,7 +26,7 @@ function Serdetails() {
                                                 <p> {props.Spara2} </p>
                                                 <ul>
                                                     <li> {props.firstli} </li>
-                                                    <li> {props.secongli} </li>
+                                                    <li> {props.secondli} </li>
                                                     <li> {props.thirdli} </li>
                                                 </ul>
                                                 <ul className="default-iconic-item">

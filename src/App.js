@@ -17,7 +17,7 @@ import ScrollToTop from "./pages/Components/ScrollToTop";
  function App() {
   return (
     <BrowserRouter basename="/">
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Header />}>
           <Route index element={<Home />} />

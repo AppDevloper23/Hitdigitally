@@ -6,7 +6,7 @@ function About() {
 
   return (
     <>
-    <Banner home={"Home"} title={"About Us"} liItem={"About Us"}/>
+      <Banner home={"Home"} title={"About Us"} liItem={"About Us"} />
       <div className="content-display-section section-top-gap-150">
         <div className="box-wrapper custom-box-wrapper about-box-wrapper pos-relative">
           <div className="content-inner-img content-inner-img-left">
@@ -35,7 +35,7 @@ function About() {
                         <div className="content">
                           <h4 className="smalltitle">Our Focus</h4>
                           <p>We aim to establish your business.
-                          So, let’s have a step ahead to create something great and awesome!!!</p>
+                            So, let’s have a step ahead to create something great and awesome!!!</p>
                         </div>
                       </li>
                     </ul>

@@ -1,4 +1,4 @@
-export  const BlogContent = [
+export const BlogContent = [
     {
         id: "1",
         blogheading: "Why your business needs a Digital Marketing Strategy",
@@ -25,7 +25,7 @@ export  const BlogContent = [
         blogdes: "We see content marketing as the ‘engagement’ fuel that powers all digital communications from search to social to email marketing to creating website experiences which convert. Content marketing is creation and distribution of,",
         blogimg: "/assets/images/blog/blog-list/img-2.jpg",
         bloglink: "/blogdetails/how-digital-marketing-will-change-in-2018",
-        
+
         firsthding: "Content Marketing",
         secpara: "We see content marketing as the ‘engagement’ fuel that powers all digital communications from search to social to email marketing to creating website experiences which convert. Content marketing is creation and distribution of relevant content to the target market for promotion of a product or service.",
         sechding: "Big Data",

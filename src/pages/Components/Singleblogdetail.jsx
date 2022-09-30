@@ -1,5 +1,6 @@
-import React from 'react';
+import React from 'react'
 import { useLocation } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Blogbox from './Blogbox';
 
 
@@ -24,7 +25,7 @@ const Singleblogdetail = () => {
                                                                 <div className="col-12">
                                                                     <div className="blog-details-top text-center">
                                                                         <div className="post-meata">
-                                                                            <span className="author">By<a href="#">Admin </a></span>
+                                                                            <span className="author">By<Link to="#">Admin </Link></span>
                                                                             <span>03 April, 2021</span>
                                                                             <span>10 min read</span>
                                                                         </div>
@@ -84,35 +85,35 @@ const Singleblogdetail = () => {
                 </div>
             </div>
             <div className="blog-list-section section-top-gap-150">
-            <div className="box-wrapper">
-            <div className="section-wrapper">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-xl-7">
-                                <div className="section-content section-content-gap-80">
-                                    <h6 className="section-tag tag-blue">Latest News</h6>
-                                    <h3 className="section-title">Related Blogs</h3>
-                                    <span className="icon-seperator"><img
-											src="/assets/images/icons/section-seperator-shape.png" alt="" /></span>
+                <div className="box-wrapper">
+                    <div className="section-wrapper">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-xl-7">
+                                    <div className="section-content section-content-gap-80">
+                                        <h6 className="section-tag tag-blue">Latest News</h6>
+                                        <h3 className="section-title">Related Blogs</h3>
+                                        <span className="icon-seperator"><img
+                                            src="/assets/images/icons/section-seperator-shape.png" alt="" /></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="blog-list-wrapper" >
-                    <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-12">
-                                <div className="blog-list-items-full-width">
-                                    <Blogbox />
+                    <div className="blog-list-wrapper" >
+                        <div className="container">
+                            <div className="row justify-content-center">
+                                <div className="col-12">
+                                    <div className="blog-list-items-full-width">
+                                        <Blogbox />
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </>
     )
 }

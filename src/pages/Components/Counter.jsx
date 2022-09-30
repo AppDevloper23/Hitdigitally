@@ -1,6 +1,5 @@
-import React from 'react';
-// import Countercode from './Countercode';
-import CountUp from 'react-countup';
+import React from 'react'
+import CountUp from 'react-countup'
 
 
 function Countercode(props) {
@@ -21,7 +20,7 @@ function Countercode(props) {
 
 function Counter() {
 
-    const runningcounter  = [
+    const runningcounter = [
         {
             id: "1",
             img: 'assets/images/icons/count-shape-orange.png',
@@ -43,16 +42,22 @@ function Counter() {
     ]
 
     const CounterValue = runningcounter.map((countercard, i) => {
-        return <Countercode id={runningcounter[i].id} img={runningcounter[i].img} endvalue={runningcounter[i].endvalue} 
-        heading={runningcounter[i].heading}        
-        />
+        return (
+            <Countercode
+                key={countercard.id}
+                id={countercard.id}
+                img={countercard.img}
+                endvalue={countercard.endvalue}
+                heading={countercard.heading}
+            />
+        )
     })
 
-  return (
-    <>
-    {CounterValue}
-    </>
-  )
+    return (
+        <>
+            {CounterValue}
+        </>
+    )
 }
 
 export default Counter;

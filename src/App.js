@@ -1,5 +1,6 @@
-import ReactDOM from "react-dom/client";
+// import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { Switch } from "react-router";
 import Header from "./Layouts/Header";
 import Footer from "./Layouts/Footer";
 import Home from "./pages/Home";
@@ -13,17 +14,16 @@ import Error from "./pages/Error";
 import Servicedetail from "./pages/Servicedetail";
 import ScrollToTop from "./pages/Components/ScrollToTop";
 
-
-export default function App() {
+ function App() {
   return (
     <BrowserRouter basename="/">
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Routes>
         <Route path="/" element={<Header />}>
           <Route index element={<Home />} />
           <Route path="Portfolio" element={<Portfolio />} />
           <Route path="Service" element={<Service />} />
-          <Route path="Servicedetail/:id" element={<Servicedetail />} />
+          <Route exact path="Service/:id" element={<Servicedetail />} />
           <Route path="About" element={<About />} />
           <Route path="Blog" element={<Blog />} />
           <Route path="blogdetails/:id" element={<Blogdetail />} />
@@ -36,5 +36,5 @@ export default function App() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+export default App;
+

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import { FormSchema } from './schema';
+// import axios from 'axios';
 
 const initialValues = {
     name: "",
@@ -19,13 +20,22 @@ const Form = () => {
         onSubmit: (values, action) => {
             console.log(" ~ file: Form.jsx ~ line 11 ~ Form ~ values", values);
             action.resetForm();
+
+            //success message
+            document.getElementById('form-messege').innerHTML = '<div class="alert alert-success" style="margin-top:20px;"><strong>Success!</strong> You have successfully submitted the form.</div>';
+
+            // axios.post(`/contact_submit`, { values })
+            //     .then(res => {
+            //         console.log(res);
+            //         console.log(res.data);
+            //     })
         },
 
     });
 
     return (
         <>
-            <form id="contact-form" onSubmit={handleSubmit} className="default-form" >
+            <form id="contact-form1" onSubmit={handleSubmit} className="default-form" method='POST' >
                 <div className="row">
                     <div className="col-lg-6 mb-20">
                         <div className="default-form-single-item">
@@ -90,7 +100,7 @@ const Form = () => {
                             className="btn btn-lg btn-default icon-right submit-btn">
                             Submit Now <i className="icofont-double-right"></i></button>
                     </div>
-                    <p className="form-messege"></p>
+                    <p id="form-messege"></p>
                 </div>
             </form>
         </>

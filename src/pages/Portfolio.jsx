@@ -8,7 +8,7 @@ function FillExample() {
     return (
         <>
             <Banner home={"Home"} title={"Portfolio"} liItem={"Portfolio"} />
-                <TabsContent />
+            <TabsContent />
             <Newsletter />
         </>
     )

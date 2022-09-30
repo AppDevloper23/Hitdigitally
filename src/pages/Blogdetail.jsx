@@ -3,8 +3,8 @@ import Banner from './Components/Banner';
 import Newsletter from './Components/Newsletter';
 import Singleblogdetail from './Components/Singleblogdetail';
 
-const Blogdetail = ({blogcard}) => {
-  
+const Blogdetail = ({ blogcard }) => {
+
     return (
         <>
             <Banner home={"Home"} title={"Blog Detail"} liItem={"Blogs"} />

@@ -45,9 +45,15 @@ function Process() {
     ]
 
     const ProcessContent = OurProcess.map((card, i) => {
-        return <Processdata id={OurProcess[i].id} processimg={OurProcess[i].processimg} Processphding={OurProcess[i].Processphding}
-            Processpara={OurProcess[i].Processpara}
-        />
+        return (
+            <Processdata
+                key={card.id}
+                id={OurProcess[i].id}
+                processimg={OurProcess[i].processimg}
+                Processphding={OurProcess[i].Processphding}
+                Processpara={OurProcess[i].Processpara}
+            />
+        )
     })
 
     return (

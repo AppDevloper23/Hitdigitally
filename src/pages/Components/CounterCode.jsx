@@ -4,8 +4,8 @@ import Counter from './Counter'
 const CounterCode = () => {
   return (
     <>
-    
-    <div className="count-display section-fluid-200 section-inner-padding-100 section-inner-gray-gradient-bg-reverse">
+
+      <div className="count-display section-fluid-200 section-inner-padding-100 section-inner-gray-gradient-bg-reverse">
         <div className="box-wrapper">
           <div className="count-wrapper pos-relative">
             <div className="container-fluid">

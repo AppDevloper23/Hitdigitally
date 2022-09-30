@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import CustomModal from "./Modal";
 
 const PortfolioItem = ({ id, tabImage, tabLinks, modalhding, modalpara }) => {

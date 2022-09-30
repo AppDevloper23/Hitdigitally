@@ -4,7 +4,7 @@ export const ServiceDropdown = [
         id: "1",
         Sname: "Custom Website Design",
         path: "/custom-website-design",
-        title: "Custom Website Design",
+        title12: "Custom Website Design",
         subtitle: "DISCOVER THE SERVICES WE PROVIDE",
         mainhding: "Custom Website Design We are Digital Business Agency",
         Spara: "We are Digital Business Agency Our lofty offers confirm your long-lasting triumph. Get customized website designs formulated by our expert",
@@ -114,14 +114,10 @@ export const ServiceDropdown = [
         secondli: "  Ensure your first page ranking.",
         thirdli: "   Grow your business circle.",
         Serviceimg: "/assets/images/service/img-6.jpg",
-        id: "6",
         img: '/assets/images/icons/promo/Search-Engine-Optimization.png',
         img2: '/assets/images/icons/promo/Search-Engine-Optimization-2.png',
         heading: "Search Engine Optimization",
         description: "We are Digital Business Agency Our exceptional team services enable your business to positively fly higher in skies. Acquire our Search",
         serlink: "/servicedetail/search-engine-optimization"
     },
-
-
-
 ]

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Newsletter() {
   return (
     <>
-     <div className="subscribe-banner section-top-gap-150">
+      <div className="subscribe-banner section-top-gap-150">
         <div className="container">
           <div className="row justify-content-between align-items-center">
             <div className="col-lg-6 col-xl-6">

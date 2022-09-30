@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import { TabsData } from './Tabs';
-import CustomModal from './Modal';
-import { useLocation } from 'react-router-dom'
-import Button from 'react-bootstrap/Button';
+//import { useLocation } from 'react-router-dom'
 import PortfolioItem from './PortfolioItem';
 
 const TabsContent = () => {
-   
+
     // Tabs State
     const [items, setItems] = useState(TabsData);
-    const location = useLocation();
-    let props = (location.state);
+    // const location = useLocation();
+    // let props = (location.state);
 
     const filteritem = (cateItem) => {
         const updatedItems = TabsData.filter((curElem) => {
@@ -47,9 +45,9 @@ const TabsContent = () => {
                                         <div className="row">
                                             {
                                                 items.map((elem) => {
-                                                    const { id, tabImage, tabLinks,modalhding, modalpara} = elem;
+                                                    const { id, tabImage, tabLinks, modalhding, modalpara } = elem;
                                                     return (
-                                                      <PortfolioItem id={id} tabImage={tabImage} tabLinks={tabLinks} modalhding={modalhding} modalpara={modalpara} />
+                                                        <PortfolioItem key={id} id={id} tabImage={tabImage} tabLinks={tabLinks} modalhding={modalhding} modalpara={modalpara} />
                                                     )
                                                 })
                                             }
@@ -61,7 +59,7 @@ const TabsContent = () => {
                     </div>
                 </div>
             </div>
-           
+
         </>
     )
 }

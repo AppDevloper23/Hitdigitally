@@ -17,8 +17,8 @@ function Home() {
               <h2 className="title">We are <span>& creative</span> digital, enthusiastic</h2>
               <p>Hit Digitally is the rising digital marketing bureau that offers with the best
                 compelling services to elevate any business.</p>
-              <a href="/service" className="btn btn-lg btn-default icon-right">All
-                Service’s <i className="icofont-double-right"></i></a>
+              <a href="/service" className="btn btn-lg btn-default icon-right">
+                All Service’s <i className="icofont-double-right"></i></a>
             </div>
             <div className="hero-image">
               <img className="img-fluid" src="assets/images/hero/hero.png" alt="" />
@@ -26,13 +26,9 @@ function Home() {
           </div>
         </div>
       </div>
-    <CounterCode />
-
+      <CounterCode />
       <Servicebox />
-
-
       <Singleblog />
-
       <Newsletter />
     </>
   )

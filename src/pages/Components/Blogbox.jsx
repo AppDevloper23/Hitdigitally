@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { BlogContent } from './Blogdata';
 
-function Blogbox({id, blogimg, item,blogdes, blogheading, bloglink}) {
+function Blogbox({ id, blogimg, item, blogdes, blogheading, bloglink }) {
     return (
         <>
             <div className="blog-list-single-item" >
@@ -27,13 +27,12 @@ const Blogdata = () => {
     const Blogs = BlogContent.map((blogcard, i) => {
         return (
             <Blogbox
+                key={blogcard.id}
                 id={blogcard.id}
                 blogimg={blogcard.blogimg}
                 item={blogcard}
                 blogdes={blogcard.blogdes}
-
                 blogheading={blogcard.blogheading}
-
                 bloglink={blogcard.bloglink}
             />
         )

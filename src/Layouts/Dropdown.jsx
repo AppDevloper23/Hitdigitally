@@ -1,5 +1,3 @@
-
-import { Link } from "react-router-dom";
 import { ServiceDropdown } from './Dropdowndata';
 
 
@@ -10,9 +8,9 @@ const Dropdown = () => {
                 {ServiceDropdown.map(item => {
                     return (
                         <li key={item.id}>
-                            <Link to={`/servicedetail${item.path}`} state={item} className={item.Sname}>
+                            <a href={`/service${item.path}`} state={item} className={item.Sname}>
                                 {item.title}
-                            </Link>
+                            </a>
                         </li>
                     )
                 })}

@@ -30,7 +30,7 @@ function Single() {
 
     const Service = ServiceDropdown.map((card, i) => {
         return (
-            <Singleservice
+            <Singleservice key={card.id}
                 id={card.id}
                 img={card.img}
                 img2={card.img2}
